@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background-image: url(https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/netflixteaser.png); 
+}
+
+.box , label{
+    color: white;
+}
+
+#title{
+   text-align: center;
+   color: red;
+   font-size: 400%;
+}
+
+#description{
+    text-align: center;
+    color: white;
+    font-size: 110%;
+}
+
+.box{
+    padding: 20px;
+
+    
+}
+
+#submit{
+    display: inline-block;
+    margin: 0px 30%;
+    border-radius: 30px;
+    padding: 10px 40px;
+    background-color: red;
+    color: white;
+    
+}
+
+form{
+    background-color: rgba(0, 0,0, 0.88);
+    margin: 0px 15%;
+    
+}
+
+#container{
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 20px 10px;
+    height: 90%;
+}
+
+label{
+    font-size: 20px;
+}
+
+input{
+    margin: 5px 0px;
+    border-radius: 3px;
+    border: none;
+}
+
+.x{
+    width: 98%;
+    height: 30px;
+    padding: 0px 2px;
+}
+
+textarea{
+    border: none;
+    border-radius: 3px;
+    padding: 0px 2px;
+}
+
+select{
+    border: none;
+    border-radius: 3px;
+    width: 98%;
+    height: 30px;
+}
