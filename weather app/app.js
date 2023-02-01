@@ -8,7 +8,8 @@ window.addEventListener('load' , ()=> {
     let iconz = document.querySelector('img')
     let ulke = document.querySelector('.ulke')
     let sehir = document.querySelector('.sehir')
-    iconz.style.width = '1000px';
+    iconz.style.width = '200px';
+
 
     if(navigator.geolocation){
         navigator.geolocation.getCurrentPosition(position =>{
@@ -25,7 +26,7 @@ window.addEventListener('load' , ()=> {
             }).then(data =>{
                 
 
-                const {temp_f , last_updated} = data.current
+                const {temp_f , last_updated , temp_c} = data.current
 
                 const {text , icon} = data.current.condition
 
@@ -34,7 +35,7 @@ window.addEventListener('load' , ()=> {
 
                 temperatureDegree.textContent = temp_f
 
-                locationTimezone.textContent = last_updated
+                
                 
                 iconz.src = `${icon}`
 
@@ -43,7 +44,29 @@ window.addEventListener('load' , ()=> {
                 ulke.textContent = country
                 sehir.innerText = name
 
+                const deger = document.querySelector('.birim')
+
+                const degree = document.querySelector('.degree-section')
+
+degree.onclick = (e) => {
+
+    if(e.target.innerText == temp_f){
+        temperatureDegree.textContent = temp_c
+        deger.innerText = 'C'
+    } else if (e.target.innerText == temp_c) {
+        temperatureDegree.textContent = temp_f
+        deger.innerText = 'F'   
+    }
+
+    
+}
+
+
+
             })
         })
     } 
 })
+
+
+
