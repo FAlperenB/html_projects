@@ -1,0 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+  background-color:#0253A4;
+  font-family: 'Segoe UI' , 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+.card-container{
+  background-image: url("https://p4.wallpaperbetter.com/wallpaper/661/973/110/cool-nba-logo-wallpaper-preview.jpg");
+}
